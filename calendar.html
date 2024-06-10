@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Refúgio dos Pets</title>
+      <!-- Favicon -->
+      <link rel="shortcut icon" href="images/favicon.ico" />
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- Typography CSS -->
+      <link rel="stylesheet" href="css/typography.css">
+      <!-- Style CSS -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive CSS -->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- Full calendar -->
+      <link href='fullcalendar/core/main.css' rel='stylesheet' />
+      <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
+      <link href='fullcalendar/timegrid/main.css' rel='stylesheet' />
+      <link href='fullcalendar/list/main.css' rel='stylesheet' />
+      <link rel="stylesheet" href="css/flatpickr.min.css">
+   </head>
+   <body  class="sidebar-main-active right-column-fixed">
+      <!-- loader Start -->
+      <div id="loading">
+         <div id="loading-center">
+         </div>
+      </div>
+      <!-- loader END -->
+      <!-- Wrapper Start -->
+      <div class="wrapper">
+         <!-- Sidebar  -->
+         <div class="iq-sidebar">
+            <div class="iq-sidebar-logo d-flex justify-content-between">
+               <a href="index.html" class="header-logo">
+                  <img src="images/logo.png" class="img-fluid rounded-normal" alt="">
+                  <div class="logo-title font-size-21 font-weight-500">
+                     <span class="text-danger text-uppercase">Refúgio dos<span class="text-primary ml-1">Pets</span></span>
+                  </div>
+               </a>
+               <div class="iq-menu-bt-sidebar">
+                  <div class="iq-menu-bt align-self-center">
+                     <div class="wrapper-menu">
+                        <div class="main-circle"><i class="ri-arrow-left-s-line"></i></div>
+                        <div class="hover-circle"><i class="ri-arrow-right-s-line"></i></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div id="sidebar-scrollbar">
+               <nav class="iq-sidebar-menu">
+                  <ul id="iq-sidebar-toggle" class="iq-menu">
+                     <li class="active">
+                        <a href="calendar.html" class="iq-waves-effect"><i class="las la-calendar iq-arrow-left"></i><span>Calendário</span></a>
+                     </li>
+                     <li>
+                        <a href="#clientinfo" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span class="ripple rippleEffect"></span><i class="las la-user-tie iq-arrow-left"></i><span>Cadastro Clientes</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                        <ul id="clientinfo" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle" style="">
+                            <li><a href="editar-clientes.html"><i class="las la-edit"></i>Editar Cliente</a></li>
+                            <li><a href="add-user.html"><i class="las la-plus-circle"></i>Cadastrar Cliente</a></li>
+                            <li><a href="user-list.html"><i class="las la-th-list"></i>Listar de Clientes</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#petinfo" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span class="ripple rippleEffect"></span><i class="las la-user-tie iq-arrow-left"></i><span>Cadastro Pets</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                        <ul id="petinfo" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle" style="">
+                            <li><a href="editar-clientes.html"><i class="las la-edit"></i>Editar Pets</a></li>
+                            <li><a href="add-user.html"><i class="las la-plus-circle"></i>Cadastrar Pets</a></li>
+                            <li><a href="user-list.html"><i class="las la-th-list"></i>Listar Pets</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#speciesinfo" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span class="ripple rippleEffect"></span><i class="las la-user-tie iq-arrow-left"></i><span>Cadastro Espécies</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                        <ul id="speciesinfo" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle" style="">
+                            <li><a href="editar-clientes.html"><i class="las la-edit"></i>Editar Espécies</a></li>
+                            <li><a href="add-user.html"><i class="las la-plus-circle"></i>Cadastrar Espécies</a></li>
+                            <li><a href="user-list.html"><i class="las la-th-list"></i>Listar Espécies</a></li>
+                        </ul>
+                    </li>
+                    
+                  </ul>
+                </nav>
+            </div>
+         </div>
+         <!-- TOP Nav Bar -->
+         <div class="iq-top-navbar">
+            <div class="iq-navbar-custom">
+               <nav class="navbar navbar-expand-lg navbar-light p-0">
+                  <div class="iq-menu-bt d-flex align-items-center">
+                     <div class="wrapper-menu">
+                        <div class="main-circle"><i class="ri-arrow-left-s-line"></i></div>
+                        <div class="hover-circle"><i class="ri-arrow-right-s-line"></i></div>
+                     </div>
+                     <div class="iq-navbar-logo d-flex justify-content-between">
+                        <a href="index.html" class="header-logo">
+                           <img src="images/logo.png" class="img-fluid rounded-normal" alt="">
+                           <div class="pt-2 pl-2 logo-title font-size-21 font-weight-500">
+                              <span class="text-danger text-uppercase">Refúgio dos<span class="text-primary ml-1">Pets</span></span>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="navbar-breadcrumb">
+                     <h4 class="mb-0 text-dark">Dashboard</h4>
+                     <p class="mb-0"><span class="text-danger">Olá,</span> Seja Bem-Vindo</p>
+                  </div>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"  aria-label="Toggle navigation">
+                  <i class="ri-menu-3-line"></i>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                     <ul class="navbar-nav ml-auto navbar-list">
+                        <li class="nav-item nav-icon">
+                           <div class="iq-search-bar">
+                              <form action="#" class="searchbox">
+                                 <input type="text" class="text search-input font-size-12" placeholder="Buscar Consulta...">
+                                 <a class="search-link" href="#"><i class="ri-search-line"></i></a>
+                              </form>
+                           </div>
+                        </li>                        
+                     </ul>
+                  </div>
+                  <ul class="navbar-list">
+                     <div class="d-inline-block w-100 text-center p-3">
+                        <a class="bg-primary iq-sign-btn" href="login.html" role="button">Sair<i class="ri-login-box-line ml-2"></i></a>
+                     </div>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+         <!-- TOP Nav Bar END -->
+         <!-- Page Content  -->
+         <div id="content-page" class="content-page">
+            <div class="container-fluid">
+               <div class="row row-eq-height">
+                  <div class="col-md-3">
+                     <div class="iq-card">
+                        <div class="iq-card-header d-flex justify-content-between">
+                           <div class="iq-header-title">
+                              <h4 class="card-title">Agenda de Hoje</h4>
+                           </div>
+                        </div>
+                        <div class="iq-card-body">
+                           <ul class="m-0 p-0 today-schedule">
+                              <li class="d-flex">
+                                 <div class="schedule-icon"><i class="ri-checkbox-blank-circle-fill text-primary"></i></div>
+                                 <div class="schedule-text"> <span>Consulta do pet do José</span>
+                                    <span>08:00 até 08:30</span>
+                                 </div>
+                              </li>
+                              <li class="d-flex">
+                                 <div class="schedule-icon"><i class="ri-checkbox-blank-circle-fill text-primary"></i></div>
+                                 <div class="schedule-text"> <span>Consulta do pet da Maria</span>
+                                    <span>08:30 até 09:00</span>
+                                 </div>
+                              </li>
+                              <li class="d-flex">
+                                 <div class="schedule-icon"><i class="ri-checkbox-blank-circle-fill text-primary"></i></div>
+                                 <div class="schedule-text"> <span>Consulta do pet do João</span>
+                                    <span>09:00 até 09:30</span>
+                                 </div>
+                              </li>
+                              <li class="d-flex">
+                                 <div class="schedule-icon"><i class="ri-checkbox-blank-circle-fill text-primary"></i></div>
+                                 <div class="schedule-text"> <span>Consulta do pet da Joana</span>
+                                    <span>09:30 até 10:00</span>
+                                 </div>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="iq-card calender-small">
+                        <div class="iq-card-body smaill-calender-home">
+                           <input type="text" class="flatpicker d-none">
+                        </div>
+                     </div>                  
+                  </div>
+                  <div class="col-md-9">
+                     <div class="iq-card">
+                        <div class="iq-card-header d-flex justify-content-between">
+                           <div class="iq-header-title">
+                              <h4 class="card-title">Agendamentos</h4>
+                           </div>
+                           <div class="iq-card-header-toolbar d-flex align-items-center">
+                              <a href="" class="btn btn-primary"><i class="ri-add-line mr-2"></i>Adicionar Agendamentos</a>
+                           </div>
+                        </div>
+                        <div class="iq-card-body">
+                           <div id='calendar1'></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      cadastro-cliente.html
+      <!-- Footer -->
+      <footer class="iq-footer">
+         <div class="container-fluid">
+            <div class="row">               
+               <div class="col-lg-6 text-right">
+                  Copyright 2024 <a href="#">Refúgio dos Pets</a> Todos os Direitos Reservados.
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- Footer END -->
+      <!-- color-customizer -->
+      <div class="iq-colorbox color-fix">
+         
+         <div class="clearfix color-picker">
+            <h3 class="iq-font-black">Refúgio dos Pets </h3>
+         </div>
+      </div>
+      <!-- color-customizer END -->
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <!-- Appear JavaScript -->
+      <script src="js/jquery.appear.js"></script>
+      <!-- Countdown JavaScript -->
+      <script src="js/countdown.min.js"></script>
+      <!-- Counterup JavaScript -->
+      <script src="js/waypoints.min.js"></script>
+      <script src="js/jquery.counterup.min.js"></script>
+      <!-- Wow JavaScript -->
+      <script src="js/wow.min.js"></script>
+      <!-- Apexcharts JavaScript -->
+      <script src="js/apexcharts.js"></script>
+      <!-- Slick JavaScript -->
+      <script src="js/slick.min.js"></script>
+      <!-- Select2 JavaScript -->
+      <script src="js/select2.min.js"></script>
+      <!-- Owl Carousel JavaScript -->
+      <script src="js/owl.carousel.min.js"></script>
+      <!-- Magnific Popup JavaScript -->
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <!-- Smooth Scrollbar JavaScript -->
+      <script src="js/smooth-scrollbar.js"></script>
+      <!-- lottie JavaScript -->
+      <script src="js/lottie.js"></script>
+      <!-- Full calendar -->
+      <script src='fullcalendar/core/main.js'></script>
+      <script src='fullcalendar/daygrid/main.js'></script>
+      <script src='fullcalendar/timegrid/main.js'></script>
+      <script src='fullcalendar/list/main.js'></script>
+      <!-- Flatpicker Js -->
+      <script src="js/flatpickr.js"></script>
+      <!-- Style Customizer -->
+      <script src="js/style-customizer.js"></script>
+      <!-- Chart Custom JavaScript -->
+      <script src="js/chart-custom.js"></script>
+      <!-- Custom JavaScript -->
+      <script src="js/custom.js"></script>
+   </body>
+</html>
