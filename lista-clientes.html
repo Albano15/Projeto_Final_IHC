@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <title>Refúgio dos Pets</title>
+   <!-- Favicon -->
+   <link rel="shortcut icon" href="images/favicon.ico" />
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- Typography CSS -->
+   <link rel="stylesheet" href="css/typography.css">
+   <!-- Style CSS -->
+   <link rel="stylesheet" href="css/style.css">
+   <!-- Responsive CSS -->
+   <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+   <!-- loader Start -->
+   <div id="loading">
+      <div id="loading-center">
+      </div>
+   </div>
+   <!-- loader END -->
+   <!-- Wrapper Start -->
+   <div class="wrapper">
+      <!-- Sidebar  -->
+      <div class="iq-sidebar">
+         <div class="iq-sidebar-logo d-flex justify-content-between">
+            <a href="index.html" class="header-logo">
+               <img src="images/logo.png" class="img-fluid rounded-normal" alt="">
+               <div class="logo-title font-size-21 font-weight-500">
+                  <span class="text-danger text-uppercase">Refúgio dos<span class="text-primary ml-1">Pets</span></span>
+               </div>
+            </a>
+            <div class="iq-menu-bt-sidebar">
+               <div class="iq-menu-bt align-self-center">
+                  <div class="wrapper-menu">
+                     <div class="main-circle"><i class="ri-arrow-left-s-line"></i></div>
+                     <div class="hover-circle"><i class="ri-arrow-right-s-line"></i></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="sidebar-scrollbar">
+            <nav class="iq-sidebar-menu">
+               <ul id="iq-sidebar-toggle" class="iq-menu">
+                  <li class="Ativo">
+                     <a href="calendar.html" class="iq-waves-effect"><i
+                           class="las la-calendar iq-arrow-left"></i><span>Calendário</span></a>
+                  </li>
+                  <li class="Ativo">
+                     <a href="lista_consultas.html" class="iq-waves-effect"><i
+                           class="las la-calendar iq-arrow-left"></i><span>Lista de Consultas</span></a>
+                  </li>
+                  <li>
+                     <a href="#clientinfo" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span
+                           class="ripple rippleEffect"></span><i
+                           class="las la-user-tie iq-arrow-left"></i><span>Cadastro Clientes</span><i
+                           class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                     <ul id="clientinfo" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle" style="">
+                        <li><a href="editar-clientes.html"><i class="las la-edit"></i>Editar Cliente</a></li>
+                        <li><a href="cadastro-cliente.html"><i class="las la-plus-circle"></i>Cadastrar Cliente</a></li>
+                        <li><a href="lista-clientes.html"><i class="las la-th-list"></i>Lista de Clientes</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="#petinfo" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span
+                           class="ripple rippleEffect"></span><i
+                           class="las la-user-tie iq-arrow-left"></i><span>Cadastro Pets</span><i
+                           class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                     <ul id="petinfo" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle" style="">
+                        <li><a href="editar-clientes.html"><i class="las la-edit"></i>Editar Pets</a></li>
+                        <li><a href="cadastro-cliente.html"><i class="las la-plus-circle"></i>Cadastrar Pets</a></li>
+                        <li><a href="lista-clientes.html"><i class="las la-th-list"></i>Listar Pets</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="#speciesinfo" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span
+                           class="ripple rippleEffect"></span><i
+                           class="las la-user-tie iq-arrow-left"></i><span>Cadastro Espécies</span><i
+                           class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                     <ul id="speciesinfo" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle" style="">
+                        <li><a href="editar-clientes.html"><i class="las la-edit"></i>Editar Espécies</a></li>
+                        <li><a href="cadastro-cliente.html"><i class="las la-plus-circle"></i>Cadastrar Espécies</a>
+                        </li>
+                        <li><a href="lista-clientes.html"><i class="las la-th-list"></i>Listar Espécies</a></li>
+                     </ul>
+                  </li>
+
+               </ul>
+            </nav>
+         </div>
+      </div>
+      <!-- TOP Nav Bar -->
+      <div class="iq-top-navbar justify-content-end">
+         <div class="iq-navbar-custom justify-content-end">
+            <nav class="navbar navbar-expand-lg navbar-light p-0 justify-content-end">
+               <ul class="navbar-list ">
+                  <div class="d-inline-block w-100 text-center p-3">
+                     <a class="bg-primary iq-sign-btn" href="login.html" role="button">Sair<i
+                           class="ri-login-box-line ml-2"></i></a>
+                  </div>
+               </ul>
+            </nav>
+         </div>
+      </div>
+      <!-- TOP Nav Bar END -->
+      <!-- Page Content  -->
+      <div id="content-page" class="content-page">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-sm-12">
+                  <div class="iq-card">
+                     <div class="iq-card-header d-flex justify-content-between">
+                        <div class="iq-header-title">
+                           <h4 class="card-title">Lista de Clientes</h4>
+                        </div>
+                     </div>
+                     <div class="iq-card-body">
+                        <div class="table-responsive">
+                           <div class="row justify-content-between">
+                              <div class="col-sm-12 col-md-6">
+                                 <div id="user_list_datatable_info" class="dataTables_filter">
+                                    <form class="mr-3 position-relative">
+                                       <div class="form-group mb-0">
+                                          <input type="Buscar" class="form-control" id="exampleInputBuscar"
+                                             placeholder="Buscar" aria-controls="user-list-table">
+                                       </div>
+                                    </form>
+                                 </div>
+                              </div>
+                              <div class="col-sm-12 col-md-6">
+                                 <div class="user-list-files d-flex float-right">
+                                    <a class="iq-bg-primary" href="javascript:void();">
+                                       Imprimir
+                                    </a>
+                                    <a class="iq-bg-primary" href="javascript:void();">
+                                       Excel
+                                    </a>
+                                    <a class="iq-bg-primary" href="javascript:void();">
+                                       Pdf
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                           <table id="user-list-table" class="table table-striped table-bordered mt-4" role="grid"
+                              aria-describedby="user-list-page-info">
+                              <thead>
+                                 <tr>
+                                    <th>Foto</th>
+                                    <th>Nome</th>
+                                    <th>Telefone</th>
+                                    <th>Email</th>
+                                    <th>Status</th>
+                                    <th>Ação</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td class="text-center"><img class="rounded img-fluid avatar-40"
+                                          src="images/user/01.jpg" alt="profile"></td>
+                                    <td>João</td>
+                                    <td>(16) 8756 7568</td>
+                                    <td>joao@gmail.com</td>
+                                    <td><span class="badge iq-bg-primary">Ativo</span></td>
+                                    <td class="justify-content-center">
+                                       <div class="d-flex align-items-center list-user-action">
+                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title=""
+                                             data-original-title="Edit" href="editar-clientes.html"><i class="ri-pencil-line"></i></a>
+                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title=""
+                                             data-original-title="Delete" onclick="confirmar()" href="#"><i
+                                                class="ri-delete-bin-line"></i></a>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="text-center"><img class="rounded img-fluid avatar-40"
+                                          src="images/user/02.jpg" alt="profile"></td>
+                                    <td>José</td>
+                                    <td>(16) 8984 7651</td>
+                                    <td>jose@gmail.com</td>
+                                    <td><span class="badge iq-bg-primary">Ativo</span></td>
+                                    <td class="justify-content-center">
+                                       <div class="d-flex align-items-center list-user-action">
+                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title=""
+                                             data-original-title="Edit" href="editar-clientes.html"><i class="ri-pencil-line"></i></a>
+                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title=""
+                                             data-original-title="Delete" onclick="confirmar()" href="#"><i
+                                                class="ri-delete-bin-line"></i></a>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="text-center"><img class="rounded img-fluid avatar-40"
+                                          src="images/user/03.jpg" alt="profile"></td>
+                                    <td>Josefina</td>
+                                    <td>(16) 86768 68768</td>
+                                    <td>Josefina@gmail.com</td>
+                                    <td><span class="badge iq-bg-primary">Ativo</span></td>
+                                    <td class="justify-content-center">
+                                       <div class="d-flex align-items-center list-user-action">
+                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title=""
+                                             data-original-title="Edit" href="editar-clientes.html"><i class="ri-pencil-line"></i></a>
+                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title=""
+                                             data-original-title="Delete" onclick="confirmar()" href="#"><i
+                                                class="ri-delete-bin-line"></i></a>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="text-center"><img class="rounded img-fluid avatar-40"
+                                          src="images/user/04.jpg" alt="profile"></td>
+                                    <td>Joana</td>
+                                    <td>(16) 6546 74568</td>
+                                    <td>Joana@gmail.com</td>
+                                    <td><span class="badge iq-bg-danger">Inativo</span></td>
+                                    <td class="justify-content-center">
+                                       <div class="d-flex align-items-center list-user-action">
+                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title=""
+                                             data-original-title="Edit" href="editar-clientes.html"><i class="ri-pencil-line"></i></a>
+                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title=""
+                                             data-original-title="Delete" onclick="confirmar()" href="#"><i
+                                                class="ri-delete-bin-line"></i></a>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="text-center"><img class="rounded img-fluid avatar-40"
+                                          src="images/user/05.jpg" alt="profile"></td>
+                                    <td>Maria</td>
+                                    <td>(16) 3976 8768</td>
+                                    <td>maria@gmail.com</td>
+                                    <td><span class="badge iq-bg-primary">Ativo</span></td>
+                                    <td class="justify-content-center">
+                                       <div class="d-flex align-items-center list-user-action">
+                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title=""
+                                             data-original-title="Edit" href="editar-clientes.html"><i class="ri-pencil-line"></i></a>
+                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title=""
+                                             data-original-title="Delete" onclick="confirmar()" href="#"><i
+                                                class="ri-delete-bin-line"></i></a>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="text-center"><img class="rounded img-fluid avatar-40"
+                                          src="images/user/06.jpg" alt="profile"></td>
+                                    <td>Marcos</td>
+                                    <td>(16) 4868 8686</td>
+                                    <td>marcos@gmail.com</td>
+                                    <td><span class="badge iq-bg-primary">Ativo</span></td>
+                                    <td class="justify-content-center">
+                                       <div class="d-flex align-items-center list-user-action">
+                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title=""
+                                             data-original-title="Edit" href="editar-clientes.html"><i class="ri-pencil-line"></i></a>
+                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title=""
+                                             data-original-title="Delete" onclick="confirmar()" href="#"><i
+                                                class="ri-delete-bin-line"></i></a>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="text-center"><img class="rounded img-fluid avatar-40"
+                                          src="images/user/07.jpg" alt="profile"></td>
+                                    <td>Izilda</td>
+                                    <td>(16) 4445 3535</td>
+                                    <td>izilda@ymail.com</td>
+                                    <td><span class="badge iq-bg-primary">Ativo</span></td>
+                                    <td class="justify-content-center">
+                                       <div class="d-flex align-items-center list-user-action">
+                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title=""
+                                             data-original-title="Edit" href="editar-clientes.html"><i class="ri-pencil-line"></i></a>
+                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title=""
+                                             data-original-title="Delete" onclick="confirmar()" href="#"><i
+                                                class="ri-delete-bin-line"></i></a>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="text-center"><img class="rounded img-fluid avatar-40"
+                                          src="images/user/08.jpg" alt="profile"></td>
+                                    <td>Santana</td>
+                                    <td>(16) 8756 7568</td>
+                                    <td>santana@gmail.com</td>
+                                    <td><span class="badge iq-bg-primary">Ativo</span></td>
+                                    <td class="justify-content-center">
+                                       <div class="d-flex align-items-center list-user-action">
+                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title=""
+                                             data-original-title="Edit" href="editar-clientes.html"><i class="ri-pencil-line"></i></a>
+                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title=""
+                                             data-original-title="Delete" onclick="confirmar()" href="#"><i
+                                                class="ri-delete-bin-line"></i></a>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="text-center"><img class="rounded img-fluid avatar-40"
+                                          src="images/user/09.jpg" alt="profile"></td>
+                                    <td>Leonidas</td>
+                                    <td>(16) 4533 4534</td>
+                                    <td>leonidas@gmail.com</td>
+                                    <td><span class="badge iq-bg-primary">Ativo</span></td>
+                                    <td class="justify-content-center">
+                                       <div class="d-flex align-items-center list-user-action">
+                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title=""
+                                             data-original-title="Edit" href="editar-clientes.html"><i class="ri-pencil-line"></i></a>
+                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title=""
+                                             data-original-title="Delete" onclick="confirmar()" href="#"><i
+                                                class="ri-delete-bin-line"></i></a>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                        <div class="row justify-content-between mt-3">
+                           <div id="user-list-page-info" class="col-md-6">
+                              <span>Mostrando 1 de 5 páginas</span>
+                           </div>
+                           <div class="col-md-6">
+                              <nav aria-label="Page navigation example">
+                                 <ul class="pagination justify-content-end mb-0">
+                                    <li class="page-item disabled">
+                                       <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+                                    </li>
+                                    <li class="page-item Ativo"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                       <a class="page-link" href="#">Próximo</a>
+                                    </li>
+                                 </ul>
+                              </nav>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Footer -->
+   <footer class="iq-footer">
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-lg-6 text-right">
+               Copyright 2024 <a href="#">Refúgio dos Pets</a> Todos os direitos reservados.
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- Footer END -->
+   <!-- Optional JavaScript -->
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="https://unpkg.com/sweetalert2@11"></script>
+   <script>
+
+      function confirmar() {
+         Swal.fire({
+            title: 'Confirmar',
+            text: "Você tem certeza?",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Sim, confirmar!',
+            cancelButtonText: 'Cancelar'
+         }).then((result) => {
+            if (result.isConfirmed) {
+               Swal.fire(
+                  'Confirmado!',
+                  'Sua ação foi confirmada.',
+                  'success'
+               )
+            }
+         })
+      }
+
+   </script>
+
+   <script src="js/jquery.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <!-- Appear JavaScript -->
+   <script src="js/jquery.appear.js"></script>
+   <!-- Countdown JavaScript -->
+   <script src="js/countdown.min.js"></script>
+   <!-- Counterup JavaScript -->
+   <script src="js/waypoints.min.js"></script>
+   <script src="js/jquery.counterup.min.js"></script>
+   <!-- Wow JavaScript -->
+   <script src="js/wow.min.js"></script>
+   <!-- Apexcharts JavaScript -->
+   <script src="js/apexcharts.js"></script>
+   <!-- Slick JavaScript -->
+   <script src="js/slick.min.js"></script>
+   <!-- Select2 JavaScript -->
+   <script src="js/select2.min.js"></script>
+   <!-- Owl Carousel JavaScript -->
+   <script src="js/owl.carousel.min.js"></script>
+   <!-- Magnific Popup JavaScript -->
+   <script src="js/jquery.magnific-popup.min.js"></script>
+   <!-- Smooth Scrollbar JavaScript -->
+   <script src="js/smooth-scrollbar.js"></script>
+   <!-- lottie JavaScript -->
+   <script src="js/lottie.js"></script>
+   <!-- am core JavaScript -->
+   <script src="js/core.js"></script>
+   <!-- am charts JavaScript -->
+   <script src="js/charts.js"></script>
+   <!-- am animated JavaScript -->
+   <script src="js/animated.js"></script>
+   <!-- am kelly JavaScript -->
+   <script src="js/kelly.js"></script>
+   <!-- am maps JavaScript -->
+   <script src="js/maps.js"></script>
+   <!-- am worldLow JavaScript -->
+   <script src="js/worldLow.js"></script>
+   <!-- Style Customizer -->
+   <script src="js/style-customizer.js"></script>
+   <!-- Chart Custom JavaScript -->
+   <script src="js/chart-custom.js"></script>
+   <!-- Custom JavaScript -->
+   <script src="js/custom.js"></script>
+</body>
+
+</html>
